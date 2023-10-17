@@ -205,3 +205,4 @@ Each device tested the site using the following browsers:
 ## Credits
 
 Illustrations by [catalyststuff](https://www.freepik.com/author/catalyststuff)
+CSS Slider Magic by [anna_blok](https://codepen.io/anna_blok/pen/eYYRbQY)
