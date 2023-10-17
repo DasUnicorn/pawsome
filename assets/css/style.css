@@ -1,0 +1,264 @@
+/* Custom colors */
+:root {
+  --color-background-dark: #373F27; /*dark green*/
+  --color-background-light: #CDA34F; /*Gold*/
+  --color-background: #636B46; /*Green*/
+  --color-text-light: #F6F4EB; /*creme white*/
+  --color-text-dark: #1E1E1E; /*soft black*/
+}
+
+/* Reset defaults */ 
+body {
+    margin: 0px 0px 0px 0px;
+    background-color: var(--color-background-dark);
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Inter";
+  src:
+    local("Inter"),
+    url("../fonts/Inter/static/Inter-Medium.ttf") format("truetype"),
+    url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype"),
+    url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype"),
+    url("../fonts/Inter/static/Inter-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kaushan Script";
+  src:
+    local("Kaushan Script"),
+    url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lalezar";
+  src:
+    local("Lalezar"),
+    url("../fonts/Lalezar/Lalezar-Regular.ttf") format("truetype");
+}
+
+/* Text Fonts */
+p {
+	font-family: "Inter";
+}
+
+a {
+	font-family: "Inter";
+}
+
+/* Headings */
+
+h1, h2, h3, h4 {
+	font-family: "Lalezar";
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2.5em;
+	line-height: 1.1em;
+	padding-bottom: 10px;
+}
+
+.written-font {
+	font-family: "Kaushan Script";
+	margin-right: 3px;
+}
+
+/* Images */
+img {
+	width: 100%;
+}
+
+/* Navbar */
+nav {
+	align-items: center;
+	background-color: var(--color-background-dark);
+	display: flex;
+	padding: 0 20px;
+}
+nav a {
+	color: var(--color-text-light);
+	text-decoration: transparent;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	float: left;
+}
+
+li a {
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+
+/* Sections */
+
+section {
+	padding: 30px 20px;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	background-color: var(--color-background-dark);
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+}
+
+footer a {
+	color: var(--color-text-light);
+	font-weight: bold;
+	text-decoration: transparent;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+/* Header Design */
+
+.header {
+	background-image: url("../img/kasimir-header-mobile.jpg");
+	background-size: cover;
+	height: 500px;
+}
+
+h1 {
+	color: var(--color-text-light);
+	position: absolute;
+	bottom: 230px;
+	line-height: 1;
+}
+
+.offset {
+	margin-left: 50px;
+}
+
+/* Coloring for different parts */
+
+.color-light {
+	background-color: var(--color-background-light);
+	color: var(--color-text-light);
+}
+
+.color-dark {
+	background-color: var(--color-background-dark);
+	color: var(--color-text-light);
+}
+
+.color-base {
+	background-color: var(--color-background);
+	color: var(--color-text-light);
+}
+
+/* cards */
+
+.card {
+	margin: 15px 0;
+	border-radius: 25px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card-inside {
+	padding: 10px 20px;
+}
+
+/* Review Cards */
+
+.review-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.review-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--color-text-light);
+	color: var(--color-text-dark);
+	padding: 20px 20px;
+	width: 55%;
+}
+
+.review-content h3 {
+	background-color: var(--color-background-dark);
+	color: var(--color-text-light);
+	border-radius: 25px;
+	padding: 5px 20px;
+}
+
+.profile {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.stars {
+	color: var(--color-background-light);
+}
+
+.mirrow {
+	transform: rotate(180deg)
+}
+
+/* Input Fields and Labels */
+
+input, textarea, label {
+  font-family: "Inter";
+  font-size: inherit;
+}
+
+input, textarea {
+	padding: 10px;
+	margin: 10px 0;
+	border: 2px solid var(--color-background);
+	border-radius: 10px;
+	box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+	width: 95%;
+}
+
+input:focus {
+  border-color: var(--color-background-dark);
+}
+
+textarea {
+	resize: vertical;
+	height:150px;
+}
+
+.button {
+	border-radius: 25px;
+	border: 2px solid var(--color-background-light);
+	background-color: var(--color-background-light);
+	color: var(--color-text-light);
+	font-family: "Inter";
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+.button:hover {
+	background-color: var(--color-text-light);
+	color: var(--color-background-dark);
+}
