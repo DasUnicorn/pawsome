@@ -4,68 +4,97 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pawsome Detetctive</title>
+	<link href="assets/css/style.css" rel="stylesheet" />
 </head>
 <body>
-	<header></header>
+	<header>
+		<nav>
+			<a class="logo" href="">Pawsome Detective</a>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#pawtfolio">Pawtfolio</a></li>
+				<li><a href="#reviews">Reviews</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<section>
-		<img src="assets/img/kasimir-header.jpg">
-		<h1>Pawsome Detective</h1>
+	<section class="header">
+		<h1><span class="written-font">Pawsome</span><br><span class="offset">Detective</span></h1>
 	</section>
 
-	<section>
-		<h2>We solve purrfect crimes!</h2>
+	<section id="about" class="color-light">
+		<h2>We solve <br><span class="written-font">purr</span>fect crimes!</h2>
 		<p>Hey there, paws and pals!
-			I'm Kasimir, your go-to Border Collie Australian Shepherd mix for all things mysterious and marvelous. You see, I run my very own detective office and I'm on a mission to solve crimes that keep you humans scratching your heads.
+			I'm Kasimir, your go-to Border Collie Australian Shepherd mix for all things mysterious and marvelous. You see, I run my very own detective office and I'm on a mission to solve crimes that keep you humans scratching your heads.</p>
 
-			With boundless energy and determination, I'm always ready to track down wrongdoers and bring them to justice. My favorite part of the job—tailing suspects and finding things.
+		<p>With boundless energy and determination, I'm always ready to track down wrongdoers and bring them to justice. My favorite part of the job—tailing suspects and finding things.</p>
 
-			So, if you're in a tight spot, struggling with an enigma, or just need a friendly, furry companion in your quest for the truth, remember that I'm here, Kasimir, the indomitable canine detective. Sometimes, the most extraordinary heroes come in the form of your loyal, four-legged friend.</p>
-			<img src="assets/img/kasimir-tent.jpg">
+		<p>So, if you're in a tight spot, struggling with an enigma, or just need a friendly, furry companion in your quest for the truth, remember that I'm here, Kasimir, the indomitable canine detective. Sometimes, the most extraordinary heroes come in the form of your loyal, four-legged friend.</p>
 	</section>
 
-	<section>
-		<h2>Tailored Offers</h2>
-		<div>
-			<div>
+	<img src="assets/img/kasimir-tent.jpg">
+
+	<section id="pawtfolio" class="color-dark">
+		<h2><span class="written-font">Tail</span>ored Offers</h2>
+		<div class="color-light card">
+			<div class="card-inside">
 				<h3>Missing Item Retrieval</h3>
 				<p>Kasimir's exceptional sense of smell and tracking abilities would make him the go-to expert for finding lost or missing objects, from keys and jewelry to cherished toys.</p>
 			</div>
-			<div>
+		</div>
+		<div class="color-light card">
+			<div class="card-inside">
 				<h3>Pet Investigation</h3>
 				<p>Beyond human cases, Pawsome Detective could specializes in investigating pet-related mysteries, such as lost pets, missing treats, and even uncovering the culprit behind the midnight snack raids.</p>
 			</div>
-			<div>
+		</div>
+		<div class="color-light card">
+			<div class="card-inside">
 				<h3>Suspect Tracking</h3>
 				<p>Kasimir's relentless pursuit of suspects, coupled with his impressive tracking skills, are instrumental in tracking down wrongdoers and solving crimes.</p>
 			</div>
-			<div>
+		</div>
+		<div class="color-light card">
+			<div class="card-inside">
 				<h3>Murder Investigation</h3>
 				<p>Beyond human cases, Pawsome Detective could specializes in investigating pet-related mysteries, such as lost pets, missing treats, and even uncovering the culprit behind the midnight snack raids.</p>
 			</div>
 		</div>
 	</section>
 
-	<section>
-		<h2>Purrformance</h2>
-		<div>
-			<img src="">
-			<h3>Rusty the Rabbit</h3>
-			<p>“Hop-tastic service! I thought I'd never find my lucky carrot, but with Kasimir's help, it was back in my paws in a jiffy. Thanks, Pawsome Detective!”</p>
-			<p>★★★★★</p>
+	<section id="reviews" class="color-base">
+		<h2><span class="written-font">Purr</span>formance</h2>
+		<div class="review-card">
+			<div>
+				<img src="assets/img/vector-arrow.svg" class="mirrow">
+			</div>
+			<div class="review-content">
+				<img src="assets/img/rabbit.jpg" class="profile">
+				<h3>Rusty the Rabbit</h3>
+				<p>“Hop-tastic service! I thought I'd never find my lucky carrot, but with Kasimir's help, it was back in my paws in a jiffy. Thanks, Pawsome Detective!”</p>
+				<p class="stars">★★★★★</p>
+			</div>
+			<div>
+				<img src="assets/img/vector-arrow.svg">
+			</div>
 		</div>
 	</section>
 
-	<section>
-		<h2>Seeking Pawssibilities</h2>
+	<section id="contact" class="color-light">
+		<h2>Seeking <span class="written-font">Paws</span>sibilities</h2>
 		<p>Whether it's a missing squeaky toy, a cryptic message, or a case that has you howling for answers, send your mysteries our way! Contact Kasimir's Pawsome Detective Agency, and let's embark on a paw-some adventure together.</p>
-		<div>
-			<input type="email" name="email">
-			<input type="text" name="message">
-			<button>Send</button>
-		</div>
-		<img src="assets/img/kasimir-trees.jpg">
 	</section>
+
+	<section class="color-base flex-col">
+		<label>E-Mail:</label>
+		<input type="email" name="email" placeholder="Your e-mail adress">
+		<label>Message:</label>
+		<textarea placeholder="Message..."></textarea>
+		<button class="button">Send</button>
+	</section>
+
+	<img src="assets/img/kasimir-trees.jpg">
 
 	<footer>
 		<a href="">Impressum / Imprint</a>
