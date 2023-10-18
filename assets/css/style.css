@@ -39,6 +39,29 @@ body {
     url("../fonts/Lalezar/Lalezar-Regular.ttf") format("truetype");
 }
 
+/* Grid */
+
+
+@media (min-width: 650px) {
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+	.navigation { grid-area: 1 / 1 / 2 / 13; }
+	.header { grid-area: 2 / 1 / 3 / 13; }
+	.pic1 { grid-area: 3 / 7 / 4 / 13; }
+	.about { grid-area: 3 / 1 / 4 / 7; }
+	.offers { grid-area: 4 / 1 / 5 / 13; }
+	.reviews { grid-area: 5 / 1 / 6 / 13; }
+	.contact-text { grid-area: 6 / 1 / 7 / 13; }
+	.contact-form { grid-area: 7 / 6 / 8 / 13; }
+	.pic2 { grid-area: 7 / 1 / 8 / 6; }
+	.footer { grid-area: 8 / 1 / 9 / 13; } 
+}
+
+
 /* Text Fonts */
 p {
 	font-family: "Inter";
@@ -73,6 +96,23 @@ h2 {
 img {
 	width: 100%;
 }
+
+/* Hide and display different elements on desctop and mobile */
+.desktop {
+	display: none;
+}
+
+@media (min-width: 650px) {
+  .desktop {
+  	display: block;
+  }
+
+  .mobile {
+  	display: none;
+  }
+}
+
+
 
 /* Navbar */
 nav {
@@ -109,10 +149,37 @@ li a:hover {
 	display: none;
 }
 
+@media (min-width: 650px) {
+  .logo {
+  	display: block;
+  }
+
+  nav {
+  	justify-content: space-around;
+  }
+
+  ul {
+  	flex-direction: row;
+  	display: flex;
+  }
+}
+
 /* Sections */
 
 section {
 	padding: 30px 20px;
+	max-width: 1440px;
+}
+
+@media (min-width: 650px) {
+
+	section {
+		padding: 25px;
+	}
+
+	section:not(.contact-form) {
+		padding: 20px 80px;
+	}
 }
 
 .flex-col {
@@ -224,6 +291,18 @@ h1 {
 
 .card-inside {
 	padding: 10px 20px;
+}
+
+@media (min-width: 650px) {
+	.tile {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.card {
+		margin: 15px 15px;
+		width: 50%;
+	}
 }
 
 /* Review Cards */

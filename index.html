@@ -7,8 +7,9 @@
 	<link href="assets/css/style.css" rel="stylesheet" />
 </head>
 <body>
+	<div class="grid">
 	<header>
-		<nav>
+		<nav class="navigation">
 			<a class="logo" href="">Pawsome Detective</a>
 			<ul>
 				<li><a href="#about">About</a></li>
@@ -23,7 +24,7 @@
 		<h1><span class="written-font">Pawsome</span><br><span class="offset">Detective</span></h1>
 	</section>
 
-	<section id="about" class="color-light">
+	<section id="about" class="about color-light">
 		<h2>We solve <br><span class="written-font">purr</span>fect crimes!</h2>
 		<p>Hey there, paws and pals!
 			I'm Kasimir, your go-to Border Collie Australian Shepherd mix for all things mysterious and marvelous. You see, I run my very own detective office and I'm on a mission to solve crimes that keep you humans scratching your heads.</p>
@@ -33,10 +34,11 @@
 		<p>So, if you're in a tight spot, struggling with an enigma, or just need a friendly, furry companion in your quest for the truth, remember that I'm here, Kasimir, the indomitable canine detective. Sometimes, the most extraordinary heroes come in the form of your loyal, four-legged friend.</p>
 	</section>
 
-	<img src="assets/img/kasimir-tent.jpg">
+	<img src="assets/img/kasimir-tent.jpg" class="pic1">
 
-	<section id="pawtfolio" class="color-dark">
+	<section id="pawtfolio" class="offers color-dark">
 		<h2><span class="written-font">Tail</span>ored Offers</h2>
+		<div class="tile">
 		<div class="color-light card">
 			<div class="card-inside">
 				<h3>Missing Item Retrieval</h3>
@@ -49,6 +51,8 @@
 				<p>Beyond human cases, Pawsome Detective could specializes in investigating pet-related mysteries, such as lost pets, missing treats, and even uncovering the culprit behind the midnight snack raids.</p>
 			</div>
 		</div>
+		</div>
+		<div class="tile">
 		<div class="color-light card">
 			<div class="card-inside">
 				<h3>Suspect Tracking</h3>
@@ -61,9 +65,10 @@
 				<p>Beyond human cases, Pawsome Detective could specializes in investigating pet-related mysteries, such as lost pets, missing treats, and even uncovering the culprit behind the midnight snack raids.</p>
 			</div>
 		</div>
+		</div>
 	</section>
 
-	<section id="reviews" class="color-base">
+	<section id="reviews" class="reviews color-base">
 		<h2><span class="written-font">Purr</span>formance</h2>
 		<div id="slider">
    			<input type="radio" name="slider" id="slide1" checked>
@@ -123,12 +128,12 @@
 		</div>
 	</section>
 
-	<section id="contact" class="color-light">
+	<section id="contact" class="contact-text color-light">
 		<h2>Seeking <span class="written-font">Paws</span>sibilities</h2>
 		<p>Whether it's a missing squeaky toy, a cryptic message, or a case that has you howling for answers, send your mysteries our way! Contact Kasimir's Pawsome Detective Agency, and let's embark on a paw-some adventure together.</p>
 	</section>
 
-	<section class="color-base flex-col">
+	<section class="contact-form color-base flex-col">
 		<label>E-Mail:</label>
 		<input type="email" name="email" placeholder="Your e-mail adress">
 		<label>Message:</label>
@@ -136,11 +141,13 @@
 		<button class="button">Send</button>
 	</section>
 
-	<img src="assets/img/kasimir-trees.jpg">
+	<img src="assets/img/kasimir-trees.jpg" class="mobile">
+	<img src="assets/img/kasimir-trees-desktop.jpg" class="pic2 desktop">
 
-	<footer>
+	<footer class="footer">
 		<a href="">Impressum / Imprint</a>
 	</footer>
+</div>
 
 </body>
 </html>
