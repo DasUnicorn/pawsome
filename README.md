@@ -232,7 +232,7 @@ To fork the repository:
 ### Jigsaw CSS Validator
 The CSS code was validated using W3C Jigsaw CSS Validator.
 
-![Results](/assets/img/readme/w3c-css-result.png) 
+![Results CSS](/assets/img/readme/w3c-ccs-result.png) 
 
 
 ### W3C Validator
