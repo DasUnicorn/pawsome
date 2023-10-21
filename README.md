@@ -1,7 +1,7 @@
 # pawsome
-Welcome to the static Website of "Pawsome Detective" a fictional Detective Agency, run by Kasimir.
-It's designt to be simple, mobile friendly and appealing for possible customers.
-Visitors will get a good overfew over everything Pawsome Detective has to offer.
+Welcome to the static Website of "Pawsome Detective", a fictional Detective Agency run by Kasimir.
+It's designed to be simple, mobile friendly and appealing for possible customers.
+Visitors will get a good overview over everything Pawsome Detective has to offer.
 
 ---
 
@@ -65,6 +65,8 @@ The design scheme for the Pawsome Detective Agency website draws inspiration fro
 The hope is that the design choices resonate with the charm of a bygone era while offering a modern and accessible platform where users can explore the detective services and engage with captivating content. The blend of green, dark green, and gold serves as a nod to the classic past while guiding us toward an exciting and colorful future.
 The colours match with the forrest themed pictures, which show Kasimir on multiple advantures.
 
+![Colour Scheme](/assets/img/readme/colors.png)
+
 ### Typography
 
 As font for the genaral Text "Inter" was chosen. The design is clean and easy to read with a very good support for latin characters.
@@ -75,15 +77,25 @@ The headlines contain animal puns. To make them clear and let them stand out, pa
 
 The pictures used for this website show the owner of the detective agency himself. Kasimir showcases what he has to offer and introduces himself as the product through the Imagery.
 The Images align with the colours of the site in general and give an advantarous feeling.
+My sister made the images on a walk with Kasimir.
 
 ### Wireframes
 
-All Wireframes are made with Balsamiq
+All Wireframes are made with Figma.
+
+#### Desktop:
+
+![Desktop Wireframe](/assets/img/readme/wireframe-desktop.png)
+
+#### Mobile:
+
+![Mobile Wireframe](/assets/img/readme/wireframe-mobile.png)
+
 
 ### Design
 
 To set the Website to life and experiment with colours and pictures, I designed the Project in Figma.
-This Design was shown to the customer Kasimir and get his feedback.
+This Design was shown to the customer Kasimir to get his feedback.
 [Figma Design](https://www.figma.com/proto/SCP7r6LKIp3Qvn9LfRrM88/Untitled?type=design&node-id=2-5&t=0WTXtiCBzCAammTn-1&scaling=scale-down&page-id=0%3A1)
 
 
@@ -91,14 +103,9 @@ This Design was shown to the customer Kasimir and get his feedback.
 
 ### General Features
 
-#### Navbar
+#### Navigation-Bar
 
-To navigate the website easily, the navbar is an easy and quick way to move to the desired part of the site.
-
-
-Picture: Desktop version navbar with menu
-
-Picture: Mobile version navbar
+To navigate the website easily the navigationbar on the top takes you to all parts of the site.
 
 
 #### Footer with Impressum
@@ -107,12 +114,40 @@ The Footer shows the imprint of the website, to show vistors who is behind the p
 
 #### Header
 
+The Header shows Kaisimir in his whole glory and displays the name of the Agency.
+
+![Header](/assets/img/readme/header.png)
+
 #### About
+
+In the About Section the the potential customer learns more about Kasimir, his agency and what makes him a great detective.
+It is paired with a picture showing Kasimir.
+
+![About](/assets/img/readme/about.png)
+
+#### Portfolio
+
+To give a good overview over the possibilitys and services Pawsome Detective provides, they are displayed with description.
+The desctop Version offers Pictures, while the mobile version only provides the text to save space on smaller screens.
+
+![Portfolio Desktop](/assets/img/readme/offers.png)
+
+![Portfolio Mobile](/assets/img/readme/offers-mobile.png)
 
 #### Reviews
 
+Some of Kasimirs customers habe made reviews, which are displayed.
+To save space in the mobile version, instead of displayed them all, the customer can scroll through them if they like to.
+
+![Reviews](/assets/img/readme/review.png)
+
+![Reviews](/assets/img/readme/reviews-mobile.png)
+
 #### Contact
 
+To reach Kasimir directly the website provides a mail form.
+
+![Mail Form](/assets/img/readme/mail.png)
 
 ### Future Implementations
 
@@ -128,16 +163,34 @@ To boost the familiarity and prominence of the Detetctive Agency, Kasimir could 
 #### Price Table
 Not everything needs an individual price. Specific Prizes and Price Ranges could be displayed to show the possible customers what to expact from the Pawsome Detetctievs.
 
-### Hiring
+#### Hiring
 A career site could show open job opportunities to grow the Agency and attract other workers to join Kasimirs Team.
 
-
 ### Accessibility
+
+#### Fonts and Font Sizes
+
+I tried to choose fonts that are easy to read. The font sizes are coded in em and rem, to make them easly adjustable by the user themself.
+
+#### Pictures
+
+Pictures are provided with alt texts.
+Backround Pictures that do not provide information don't.
+
+#### Colors
+
+All colours and colour-text-combinations are tested for contrast and visibility. They went through a change due to accessability concerns after the design phase.
+
+#### Structural HTML
+
+The structure of html makes the website navigatable by keyboard. When pressing the tab key, all interactive contant can be reaches.
 
 
 ## Technologies Used
 
-Github
+GitHub – storage and deployment
+Sublime Text - Editor
+Figma - Design
 
 ### Languages Used
 
@@ -177,21 +230,36 @@ To fork the repository:
 ## Manual Testing
 
 ### Jigsaw CSS Validator
+The CSS code was validated using W3C Jigsaw CSS Validator.
+
+![Results](/assets/img/readme/w3c-css-result.png) 
+
 
 ### W3C Validator
+Every page of the website was validated using the W3C tool. 
+
+![Results](/assets/img/readme/w3c-html-result.png) 
 
 ### Lighthouse
 
+At first lighthouse had trouble with the performance of the Website.
+![Lighthouse result](/assets/img/readme/lighthouse-result.png) 
+
+But as it seems, chrome checks for all images and not only for the images that get loaded.
+Due to the jpg fallback images I have, incase the vafis format is not supported by the browser, the lighthouse scnan detects more pictures than actual loaded.
+If the fallback pictures are removed the score is perfect.
+
+![Lighthouse result](/assets/img/readme/lighthouse-result-no-jpg.png) 
 
 ### Full Testing
 
 Full testing was performed on the following devices:
 
 * Laptop:
-  * 
+  * Dell XPS
 * Mobile Devices:
-  * 
-  * 
+  * Iphone 12
+  * Motorola Moto G
 
 Each device tested the site using the following browsers:
 
@@ -204,5 +272,5 @@ Each device tested the site using the following browsers:
 
 ## Credits
 
-Illustrations by [catalyststuff](https://www.freepik.com/author/catalyststuff)
-CSS Slider Magic by [anna_blok](https://codepen.io/anna_blok/pen/eYYRbQY)
+* Illustrations by [catalyststuff](https://www.freepik.com/author/catalyststuff)
+* CSS Slider Magic by [anna_blok](https://codepen.io/anna_blok/pen/eYYRbQY)
