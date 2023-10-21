@@ -139,7 +139,7 @@ The desctop Version offers Pictures, while the mobile version only provides the 
 Some of Kasimirs customers habe made reviews, which are displayed.
 To save space in the mobile version, instead of displayed them all, the customer can scroll through them if they like to.
 
-![Reviews](/assets/img/readme/review.png)
+![Reviews](/assets/img/readme/reviews.png)
 
 ![Reviews](/assets/img/readme/reviews-mobile.png)
 
@@ -236,20 +236,24 @@ The CSS code was validated using W3C Jigsaw CSS Validator.
 
 
 ### W3C Validator
-Every page of the website was validated using the W3C tool. 
+Every page of the website was validated using the W3C tool.
+It shows no errors.
 
-![Results](/assets/img/readme/w3c-html-result.png) 
+![Results](/assets/img/readme/html-check.png) 
 
 ### Lighthouse
 
-At first lighthouse had trouble with the performance of the Website.
-![Lighthouse result](/assets/img/readme/lighthouse-result.png) 
+The lighthouse score for the website was used, when testing for performance, best practice and accessibility.
+![Lighthouse result](/assets/img/readme/lighthouse.png) 
 
-But as it seems, chrome checks for all images and not only for the images that get loaded.
-Due to the jpg fallback images I have, incase the vafis format is not supported by the browser, the lighthouse scnan detects more pictures than actual loaded.
-If the fallback pictures are removed the score is perfect.
+### Accessibility
+The result of the WAVE Web Accessibility Evaluation Tool shows 12 Errors and 4 contrast arrows.
+The contrast errors are in the stars of each review. Since they are just decorative object and it's not important if people can see them, I did't fix this issue.
+The 12 Errors apply to labels in the code used for the mobile display animation of multiple reviews.
 
-![Lighthouse result](/assets/img/readme/lighthouse-result-no-jpg.png) 
+![Results WAVE Web Accessibility Evaluation Tool ](/assets/img/readme/wave.png) 
+
+![Results WAVE Web Accessibility Evaluation Tool ](/assets/img/readme/wave-error.png) 
 
 ### Full Testing
 
@@ -267,6 +271,23 @@ Each device tested the site using the following browsers:
 * Safari
 * Firefox
 
+#### Testing by Hand
+
+| Feature                   | Expected Outcome                                                                                                    | Testing Performed                           | Result                                           | Pass/Fail |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------|--------------------------------------------------|-----------|
+| Navigation                | When clicked, the user will get to each part of the website that is specified in the element of the navigation bar. | Clicked each link.                          | Got directed to the correct parts of the website | Pass      |
+| Hover Portfolio (desktop) | When hovered over a portfolio piece, the text to the offer should appear.                                           | Hovered over each element.                  | Text appeared.                                   | Pass      |
+| Review Gallery (mobile)   | When clicking on the arrows, or the circles on the bottom, the shown review should circle throw all reviews.        | Clicked the arrows and circles.             | The other Reviews are shown.                     | Pass      |
+| Mail form                 | When clicking on the input fields of the mailform, I should be able to fill them with text.                         | Clicked on the input forms, started typing. | It was possible to write text.                   | Pass      |
+| Footer                    | When clicking on the imprint link, a new side should open in a new tab, showing the imprint information.            | clicked on the link in the footer.          | A new window with the imprint opened.            | Pass      |
+
+## Bugs
+
+### Mail Form doesn't send an email
+Since this is a html / css only project, the mail form doesn't send an actual email.
+
+### Review Gallery on small mobile
+The review cards on very small mobile devices might be cropped.
 
  - - -
 
