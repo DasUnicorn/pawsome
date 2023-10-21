@@ -29,7 +29,7 @@ body {
 @font-face {
 	font-family: "Inter";
 	src:
-		url("../fonts/Inter/static/Inter-Light.ttf") format("truetype"),
+		url("../fonts/Inter/static/Inter-Light.ttf") format("truetype");
 		font-weight: 300;
 	font-style: normal;
 	font-display: swap
@@ -38,7 +38,7 @@ body {
 @font-face {
 	font-family: "Inter";
 	src:
-		url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype"),
+		url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype");
 		font-weight: 400;
 	font-style: normal;
 	font-display: swap
@@ -47,7 +47,7 @@ body {
 @font-face {
 	font-family: "Inter-Bold";
 	src:
-		url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype"),
+		url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype");
 		font-weight: 700;
 	font-style: normal;
 	font-display: swap
@@ -330,7 +330,6 @@ h1 {
 @media (min-width: 1440px) {
 	.header {
 		height: 865px;
-		px;
 	}
 
 	h1 {
@@ -448,7 +447,7 @@ h1 {
 	}
 
 	.card-inside:hover p {
-		opacity: 100;
+		opacity: 1;
 	}
 
 	.card-inside:hover {
