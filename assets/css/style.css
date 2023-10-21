@@ -32,6 +32,7 @@ body {
 		url("../fonts/Inter/static/Inter-Light.ttf") format("truetype"),
 		font-weight: 300;
 	font-style: normal;
+	font-display: swap
 }
 
 @font-face {
@@ -40,6 +41,7 @@ body {
 		url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype"),
 		font-weight: 400;
 	font-style: normal;
+	font-display: swap
 }
 
 @font-face {
@@ -48,6 +50,7 @@ body {
 		url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype"),
 		font-weight: 700;
 	font-style: normal;
+	font-display: swap
 }
 
 @font-face {
@@ -55,6 +58,7 @@ body {
 	src:
 		local("Kaushan Script"),
 		url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf") format("truetype");
+	font-display: swap
 }
 
 @font-face {
@@ -62,6 +66,7 @@ body {
 	src:
 		local("Lalezar"),
 		url("../fonts/Lalezar/Lalezar-Regular.ttf") format("truetype");
+	font-display: swap
 }
 
 /* Grid */
