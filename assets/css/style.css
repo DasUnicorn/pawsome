@@ -462,9 +462,16 @@ h1 {
 	flex-direction: column;
 	background-color: var(--color-text-light);
 	color: var(--color-text-dark);
-	padding: 50px 25px;
+	padding: 25px 30px;
 	align-items: center;
+}
 
+.review-card .text {
+	flex-grow: 2;
+}
+
+.review-card h3 {
+	font-weight: 300;
 }
 
 .review-container {
@@ -489,6 +496,8 @@ h1 {
 .stars {
 	color: var(--color-background-light);
 	margin: auto;
+	font-size: 1.5rem;
+	flex-grow: 0;
 }
 
 .mirrow {
