@@ -1,4 +1,4 @@
-/* Custom colors */
+/* Custom Values */
 :root {
 	--color-background-dark: #373F27;
 	/*dark green*/
@@ -10,12 +10,18 @@
 	/*creme white*/
 	--color-text-dark: #1E1E1E;
 	/*soft black*/
+
+	--font-size-small: 1rem;
+	--font-size-medium: 1.5em;
+	--font-size-large: 2em;
+	--font-size-xxlarge: 4em;
+	--font-size-huge: 7em;
 }
 
 /* Reset defaults */
 body {
 	margin: 0px 0px 0px 0px;
-	background-color: var(--color-text-light);
+	background-color: var(--color-text-dark);
 }
 
 /* Fonts */
@@ -72,7 +78,7 @@ body {
 		grid-template-columns: repeat(12, 1fr);
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
-		max-width: 1200px;
+		max-width: 1300px;
 	}
 
 	.navigation {
@@ -116,19 +122,7 @@ body {
 /* Text Fonts */
 p {
 	font-family: "Inter";
-	font-size: 15pt;
-}
-
-@media (min-width: 650px) {
-	p {
-		font-size: 17pt;
-	}
-}
-
-@media (min-width: 1100px) {
-	p {
-		font-size: 20pt;
-	}
+	font-size: var(--font-size-small);
 }
 
 a {
@@ -145,15 +139,15 @@ h2 {
 h3,
 h4 {
 	font-family: "Inter";
-	font-size: 1.5em;
+	font-size: var(--font-size-medium);
 }
 
 h1 {
-	font-size: 4em;
+	font-size: var(--font-size-xxlarge);
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: var(--font-size-large);
 	line-height: 1.1em;
 	padding-bottom: 10px;
 }
@@ -161,17 +155,6 @@ h2 {
 .written-font {
 	font-family: "Kaushan Script";
 	margin-right: 3px;
-}
-
-@media (min-width: 180px) {
-	h2 {
-		font-size: 3.5em;
-	}
-
-	h3,
-	h4 {
-		font-size: 2em;
-	}
 }
 
 /* Images */
@@ -235,7 +218,7 @@ li a:hover {
 @media (min-width: 650px) {
 	.logo {
 		display: block;
-		font-size: 20pt;
+		font-size: var(--font-size-medium);
 	}
 
 	nav {
@@ -245,7 +228,7 @@ li a:hover {
 	ul {
 		flex-direction: row;
 		display: flex;
-		font-size: 20pt;
+		font-size: var(--font-size-medium);
 	}
 }
 
@@ -264,7 +247,7 @@ section {
 	}
 
 	section:not(.contact-form) {
-		padding: 100px 80px;
+		padding: 30px 80px;
 	}
 }
 
@@ -347,7 +330,7 @@ h1 {
 	h1 {
 		top: 470px;
 		left: 650px;
-		font-size: 7rem;
+		font-size: var(--font-size-huge);
 	}
 }
 
@@ -395,7 +378,7 @@ h1 {
 	}
 
 	.w50 {
-		flex: 0 0 45%;
+		flex: 0 0 60%%;
 	}
 
 	.picture {
@@ -513,7 +496,7 @@ input,
 textarea,
 label {
 	font-family: "Inter";
-	font-size: inherit;
+	font-size: var(--font-size-small);
 }
 
 input,
@@ -552,11 +535,14 @@ textarea {
 
 @media (min-width: 1024px) {
 
-	input,
-	textarea,
 	label,
 	.button {
-		font-size: 20pt;
+		font-size: var(--font-size-medium);
+	}
+
+	input,
+	textarea {
+		font-size: var(--font-size-small);
 	}
 }
 
@@ -607,7 +593,7 @@ textarea {
 #slides .inner {
 	transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	width: 400%;
-	height: 400px;
+	height: 500px;
 }
 
 #slides .slide {
@@ -621,7 +607,7 @@ textarea {
 }
 
 #slides p {
-	font-size: small;
+	font-size: var(--font-size-small);
 	margin: 15px 20px;
 }
 
