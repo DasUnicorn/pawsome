@@ -441,16 +441,11 @@ h1 {
 		background-image: url("../img/kasimir-sitting.avif"), url("../img/kasimir-sitting.jpg");
 	}
 
-	.card-inside p {
+	.card-inside {
 		opacity: 0;
 	}
 
-	.card-inside h3 {
-		background-color: var(--color-background-light);
-		padding: 10px 10px;
-	}
-
-	.card-inside:hover p {
+	.card-inside:hover {
 		opacity: 1;
 	}
 
@@ -520,11 +515,17 @@ label {
 
 input,
 textarea {
+	font-family: "Inter";
+	font-size: var(--font-size-small);
 	padding: 10px;
-	margin: 10px 0;
+	margin: 20px 0;
 	border: 2px solid var(--color-background);
 	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 	width: 90%;
+}
+
+label {
+	padding-top: 20px;
 }
 
 input:focus {
@@ -544,6 +545,8 @@ textarea {
 	font-weight: bold;
 	width: 200px;
 	padding: 10px 0;
+	margin-top: 20px;
+	font-weight: bold;
 }
 
 .button:hover {
@@ -553,7 +556,10 @@ textarea {
 
 @media (min-width: 1024px) {
 
-	label,
+	label {
+		font-size: var(--font-size-small);
+	}
+
 	.button {
 		font-size: var(--font-size-medium);
 	}
