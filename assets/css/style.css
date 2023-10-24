@@ -126,7 +126,7 @@ body {
 
 /* Text Fonts */
 p {
-	font-family: "Inter";
+	font-family: "Inter", "Courier New", monospace;
 	font-size: var(--font-size-small);
 }
 
@@ -138,12 +138,12 @@ a {
 
 h1,
 h2 {
-	font-family: "Lalezar";
+	font-family: "Lalezar", Times, serif;
 }
 
 h3,
 h4 {
-	font-family: "Inter";
+	font-family: "Inter", Times, serif;
 	font-size: var(--font-size-medium);
 }
 
