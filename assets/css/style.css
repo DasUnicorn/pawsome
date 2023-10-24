@@ -168,7 +168,7 @@ img {
 	height: 100%;
 }
 
-/* Hide and display different elements on desctop and mobile */
+/* Hide and display different elements on desktop and mobile */
 .desktop {
 	display: none;
 }
