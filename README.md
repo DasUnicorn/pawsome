@@ -123,11 +123,10 @@ All Wireframes are made with Figma.
 #### Desktop:
 <img src="/assets/img/readme/wireframe-desktop.png" alt="Wireframe of Dektop Version" width="300"/>
 
-![Desktop Wireframe](/assets/img/readme/wireframe-desktop.png)
 
 #### Mobile:
 
-![Mobile Wireframe](/assets/img/readme/wireframe-mobile.png)
+<img src="/assets/img/readme/wireframe-mobile.png" alt="Wireframe of Mobile Version" width="300"/>
 
 
 ### Design
@@ -270,14 +269,14 @@ To fork the repository:
 ##### Jigsaw CSS Validator
 The CSS code was validated using W3C Jigsaw CSS Validator.
 
-![Results CSS](/assets/img/readme/w3c-ccs-result.png) 
+<img src="/assets/img/readme/w3c-ccs-result.png" alt="Results Jigsaw validator" width="200"/>
 
 
 #### W3C Validator
 Every page of the website was validated using the W3C tool.
 It shows no errors.
 
-![Results](/assets/img/readme/html-check.png) 
+<img src="/assets/img/readme/html-check.png" alt="Results W3C validator" width="200"/>
 
 #### Lighthouse
 
@@ -289,9 +288,9 @@ The result of the WAVE Web Accessibility Evaluation Tool shows 12 Errors and 4 c
 The contrast errors are in the stars of each review. Since they are just decorative object and it's not important if people can see them, I didn't fix this issue.
 The 12 Errors apply to labels in the code used for the mobile display animation of multiple reviews.
 
-![Results WAVE Web Accessibility Evaluation Tool ](/assets/img/readme/wave.png) 
+<img src="/assets/img/readme/wave.png" alt="Results WAVE Web Accessibility Evaluation Tool" width="200"/>
 
-![Results WAVE Web Accessibility Evaluation Tool ](/assets/img/readme/wave-error.png) 
+<img src="/assets/img/readme/wave-error.png" alt="Results WAVE Web Accessibility Evaluation Tool" width="200"/>
 
 ### Accessibility concerns
 
