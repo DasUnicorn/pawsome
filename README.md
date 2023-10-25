@@ -271,14 +271,14 @@ To fork the repository:
 ##### Jigsaw CSS Validator
 The CSS code was validated using W3C Jigsaw CSS Validator.
 
-<img src="/assets/img/readme/w3c-ccs-result.png" alt="Results Jigsaw validator" width="200"/>
+<img src="/assets/img/readme/w3c-ccs-result.png" alt="Results Jigsaw validator" width="500"/>
 
 
 #### W3C Validator
 Every page of the website was validated using the W3C tool.
 It shows no errors.
 
-<img src="/assets/img/readme/html-check.png" alt="Results W3C validator" width="200"/>
+<img src="/assets/img/readme/html-check.png" alt="Results W3C validator" width="500"/>
 
 #### Lighthouse
 
