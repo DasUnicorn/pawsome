@@ -3,6 +3,8 @@ Welcome to the static Website of "Pawsome Detective", a fictional Detective Agen
 It's designed to be simple, mobile friendly and appealing to possible customers.
 Visitors will get a good overview over everything Pawsome Detective has to offer.
 
+Check out the Live-Version on [https://dasunicorn.github.io/pawsome/](https://dasunicorn.github.io/pawsome/)!
+
 ![Preview Mok Up](/assets/img/readme/preview.png)
 
 ---
