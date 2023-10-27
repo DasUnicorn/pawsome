@@ -195,6 +195,7 @@ nav {
 
 nav a {
 	color: var(--color-text-light);
+	text-decoration: none; /* Fallback for iOS Safari */	
 	text-decoration: transparent;
 	font-weight: bold;
 }
