@@ -169,7 +169,7 @@ It is paired with a picture showing Kasimir.
 To give a good overview over the  and services Pawsome Detective provides, they are displayed with description.
 The  Version offers Pictures, while the mobile version only provides the text to save space on smaller screens.
 
-![Portfolio Desktop](/assets/img/readme/portfolio.png)
+![Portfolio Desktop](/assets/img/readme/portfolio-desktop.png)
 
 ![Portfolio Mobile](/assets/img/readme/offers-mobile.png)
 
