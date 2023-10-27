@@ -62,13 +62,14 @@ Check out the Live-Version on [https://dasunicorn.github.io/pawsome/](https://da
     + [W3C Validator](#w3c-validator)
     + [Lighthouse](#lighthouse)
     + [Accessibility](#accessibility-1)
-  * [Accessibility concerns](#accessibility-concerns)
   * [Full Testing](#full-testing)
     + [Testing by Hand](#testing-by-hand)
-- [Bugs](#bugs)
+- [Ongoing Bugs](#ongoing-bugs)
   * [Mail Form doesn't send an email](#mail-form-doesnt-send-an-email)
   * [Review Gallery on small mobile](#review-gallery-on-small-mobile)
-- [Future Adjustments](#future-adjustments)
+- [Fixed Bugs](#fixed-bugs)
+  * [Label seems to drop in line with the input](#label-seems-to-drop-in-line-with-the-input)
+  * [Mobile Navabar isn't centered](#mobile-navabar-isnt-centered)
 - [Credits](#credits)
 
 <!-- tocstop -->
@@ -309,10 +310,6 @@ The better solution would be to build this gallery with javascript and making it
 
 <img src="/assets/img/readme/low-contrast.png" alt="Results WAVE Web Accessibility Evaluation Tool" width="500">
 
-### Accessibility concerns
-
-On Desktop, portfolio aspects are only shown when hovering over them. As [W3 noted](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html): "Content which appears on hover can be difficult or impossible to perceive if a user is required to keep their mouse pointer over the trigger." This should be adjusted in the next version (see future Adjustments).
-
 ### Full Testing
 
 Full testing was performed on the following devices:
@@ -379,11 +376,6 @@ When creating this website, I encountered a lot of aspects that needed fixing. A
 * Fix: This was easily fixed by adding an "justify-content: center;" to the nav element.
 
 <img src="/assets/img/readme/bug2-fix.png" alt="navbar is centered">
-
-## Future Adjustments
-
-After realizing the design, there is the possibility to miss the portfolio content when browsing on the desktop. Since Text is only displaying when hovering over it, it looks more like a picture gallery and you could easily miss the content when scrolling with your mouse on the side.
-This is a design decision that should completely be abolished and redo differently. Maybe with more of a card design that has a picture and a header visible.
 
  - - -
 
