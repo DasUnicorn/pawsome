@@ -228,9 +228,9 @@ The structure of html makes the website possible to navigate by keyboard. When p
 
 ## Technologies Used
 
-GitHub – storage and deployment
-Sublime Text - Editor
-Figma - Design
+* GitHub – storage and deployment
+* Sublime Text - Editor
+* Figma - Design
 
 ### Languages Used
 
@@ -281,14 +281,15 @@ The CSS code was validated using W3C Jigsaw CSS Validator.
 
 #### W3C Validator
 Every page of the website was validated using the W3C tool.
-It shows no errors.
+It shows one errors, regarding the aria-role "img". This role shouldn't be used, because usually the html tag img fulfills this usecase. To place the heading text infront of the background, the background-image is set in the css.
+To ensure the picture has an alt text, the aria label is used. I followed the advidce from [David MacDonald, veteran WCAG member.](http://www.davidmacd.com/blog/alternate-text-for-css-background-images.html)
 
-<img src="/assets/img/readme/html-check.png" alt="Results W3C validator" width="500">
+<img src="/assets/img/readme/html-check2.png" alt="Results W3C validator" width="500">
 
 #### Lighthouse
 
 The lighthouse score for the website was used, when testing for performance, best practice and accessibility.
-![Lighthouse result](/assets/img/readme/lighthouse.png) 
+![Lighthouse result](/assets/img/readme/lighthouse2.png) 
 
 #### Accessibility
 The result of the WAVE Web Accessibility Evaluation Tool shows 12 Errors and 4 contrast arrows.
