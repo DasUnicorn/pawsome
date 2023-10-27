@@ -243,7 +243,11 @@ Github
 
 ### Deployment
 
-The Website is deployed to gitpages.
+The Website is deployed to gitpages, by the automatic deploy option github is providing.
+Full process can be found in the [Github Documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+
+![Github Pages Workflow](/assets/img/readme/pages.png)
+
 
 ### Local Development
 
@@ -327,7 +331,7 @@ Each device tested the site using the following browsers:
 | Mail form                 | When clicking on the input fields of the mailform, I should be able to fill them with text.                         | Clicked on the input forms, started typing. | It was possible to write text.                   | Pass      |
 | Footer                    | When clicking on the imprint link, a new side should open in a new tab, showing the imprint information.            | clicked on the link in the footer.          | A new window with the imprint opened.            | Pass      |
 
-## Bugs
+## Ongoing Bugs
 
 ### Mail Form doesn't send an email
 Since this is a html / css only project, the mail form doesn't send an actual email.
@@ -335,6 +339,20 @@ Since this is a html / css only project, the mail form doesn't send an actual em
 ### Review Gallery on small mobile
 The review cards on very small mobile devices might be cropped.
 
+## Fixed Bugs
+When creating this website, I encountered a lot of aspects that needed fixing. All of them can be found in the github commit-messages with the title including "fix". Here are some examples of bugs I fixed a long the way.
+
+### Label seems to drop in line with the input
+Description: On the mid sized screen <1000 && >600 - check the form, "Email:" label seems to drop in line with the input.
+
+<img src="/assets/img/readme/bug1.png" alt="Label in same line as input." width="500"/>
+
+The Problem: The browser displays the content of the mailform simple in order. Because the width of the input field is set to 90%, in the given size range the label text fits next to the input form and get dispays this way.
+
+Fix: Flexbox is a way to tell the browser how to align multiple items. By displaying the form item as a flex element, I can say that all the items should be displayed in a coloumn, each element above the other.
+
+<img src="/assets/img/readme/bug1-fix.png" alt="Label on top of input." width="500"/>
+<img src="/assets/img/readme/sbltext.png" alt="Code sample Mailform." width="500"/>
 
 ## Future Adjustments
 
