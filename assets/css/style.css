@@ -418,7 +418,6 @@ h1 {
 	.card {
 		margin: 15px 15px;
 		width: 50%;
-		background-size: cover;
 		min-height: 300px;
 	}
 
@@ -426,32 +425,8 @@ h1 {
 		height: 95%;
 	}
 
-	.card1 {
-		background-image: url("../img/kasimir-head.avif"), url("../img/kasimir-head.jpg");
-	}
+	.card-img {
 
-	.card2 {
-		background-image: url("../img/kasimir-running.avif"), url("../img/kasimir-running.jpg");
-	}
-
-	.card3 {
-		background-image: url("../img/kasimir-laying.avif"), url("../img/kasimir-laying.jpg");
-	}
-
-	.card4 {
-		background-image: url("../img/kasimir-sitting.avif"), url("../img/kasimir-sitting.jpg");
-	}
-
-	.card-inside {
-		opacity: 0;
-	}
-
-	.card-inside:hover {
-		opacity: 1;
-	}
-
-	.card-inside:hover {
-		background-color: var(--color-background-light);
 	}
 }
 
