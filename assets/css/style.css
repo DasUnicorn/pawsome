@@ -187,6 +187,7 @@ img {
 /* Navbar */
 nav {
 	align-items: center;
+	justify-content: center;
 	background-color: var(--color-text-dark);
 	display: flex;
 	height: 60px;
