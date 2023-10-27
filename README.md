@@ -343,16 +343,27 @@ The review cards on very small mobile devices might be cropped.
 When creating this website, I encountered a lot of aspects that needed fixing. All of them can be found in the github commit-messages with the title including "fix". Here are some examples of bugs I fixed a long the way.
 
 ### Label seems to drop in line with the input
-Description: On the mid sized screen <1000 && >600 - check the form, "Email:" label seems to drop in line with the input.
+* Description: On the mid sized screen <1000 && >600 - check the form, "Email:" label seems to drop in line with the input.
 
 <img src="/assets/img/readme/bug1.png" alt="Label in same line as input." width="500"/>
 
-The Problem: The browser displays the content of the mailform simple in order. Because the width of the input field is set to 90%, in the given size range the label text fits next to the input form and get dispays this way.
+* The Problem: The browser displays the content of the mailform simple in order. Because the width of the input field is set to 90%, in the given size range the label text fits next to the input form and get dispays this way.
 
-Fix: Flexbox is a way to tell the browser how to align multiple items. By displaying the form item as a flex element, I can say that all the items should be displayed in a coloumn, each element above the other.
+* Fix: Flexbox is a way to tell the browser how to align multiple items. By displaying the form item as a flex element, I can say that all the items should be displayed in a coloumn, each element above the other.
 
 <img src="/assets/img/readme/bug1-fix.png" alt="Label on top of input." width="500"/>
 <img src="/assets/img/readme/sbltext.png" alt="Code sample Mailform." width="500"/>
+
+### Mobile Navabar isn't centered
+* Description: The navbar, on mobile views it is a little off centre.
+
+<img src="/assets/img/readme/bug2.png" alt="Mobile Menue is of." width="500"/>
+
+* The Problem: The items of the navigatinbar are only centeres in height, but not in width.
+
+* Fix: This was easily fixed by adding an "justify-content: center;" to the nav element.
+
+<img src="/assets/img/readme/bug2-fix.png" alt="navbar is centered" width="500"/>
 
 ## Future Adjustments
 
