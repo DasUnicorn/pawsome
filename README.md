@@ -275,14 +275,14 @@ To fork the repository:
 ##### Jigsaw CSS Validator
 The CSS code was validated using W3C Jigsaw CSS Validator.
 
-<img src="/assets/img/readme/w3c-ccs-result.png" alt="Results Jigsaw validator" width="500"/>
+<img src="/assets/img/readme/w3c-ccs-result.png" alt="Results Jigsaw validator" width="500">
 
 
 #### W3C Validator
 Every page of the website was validated using the W3C tool.
 It shows no errors.
 
-<img src="/assets/img/readme/html-check.png" alt="Results W3C validator" width="500"/>
+<img src="/assets/img/readme/html-check.png" alt="Results W3C validator" width="500">
 
 #### Lighthouse
 
@@ -291,17 +291,25 @@ The lighthouse score for the website was used, when testing for performance, bes
 
 #### Accessibility
 The result of the WAVE Web Accessibility Evaluation Tool shows 12 Errors and 4 contrast arrows.
-The contrast errors are in the stars of each review. Since they are just decorative object and it's not important if people can see them, I didn't fix this issue.
-The 12 Errors apply to labels in the code used for the mobile display animation of multiple reviews.
 
-<img src="/assets/img/readme/wave.png" alt="Results WAVE Web Accessibility Evaluation Tool" width="200"/>
+<img src="/assets/img/readme/wave.png" alt="Results WAVE Web Accessibility Evaluation Tool" width="300">
 
-<img src="/assets/img/readme/wave-error.png" alt="Results WAVE Web Accessibility Evaluation Tool" width="200"/>
+<img src="/assets/img/readme/wave-error.png" alt="Results WAVE Web Accessibility Evaluation Tool" width="300">
+
+8 X Empty form label and 4 X Multiple form labels
+
+* 8 empty and 4 multiple form labels are errors concerning the mobile gallery. Currently, at the mobile version the gallery is designed as a CSS only version. To make this possible, labels are used in unintended ways. This was hard to use when testing with a screen reader.
+The better solution would be to build this gallery with javascript and making it possible to slide on the touchscreen as well in the future.
+
+<img src="/assets/img/readme/empty-formlabel.png" alt="Results WAVE Web Accessibility Evaluation Tool" width="500">
+
+4 X Contrast Errors
+
+* The 5 stars on the reviews have low contrast that don't meet the Accessibility criteria. Since this is a decorative element only that doesn't add more information to the review itself, I stayed with the low contrast colour for design reasons.
+
+<img src="/assets/img/readme/low-contrast.png" alt="Results WAVE Web Accessibility Evaluation Tool" width="500">
 
 ### Accessibility concerns
-
-I need to do more research to check the accessibility on some parts of the site. Currently, at the mobile version the gallery is designed as a CSS only version. To make this possible, labels are used in unintended ways. This shows up in the WAVE Web Accessibility Evaluation Tool, and was hard to use when testing with a screen reader.
-The better solution would be to build this gallery with javascript and making it possible to slide on the touchscreen as well.
 
 On Desktop, portfolio aspects are only shown when hovering over them. As [W3 noted](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html): "Content which appears on hover can be difficult or impossible to perceive if a user is required to keep their mouse pointer over the trigger." This should be adjusted in the next version (see future Adjustments).
 
