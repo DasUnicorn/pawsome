@@ -504,7 +504,7 @@ h1 {
 	transform: rotate(180deg)
 }
 
-/* Input Fields and Labels */
+/* Input Fields, Labels and Form element */
 
 input,
 textarea,
@@ -530,6 +530,11 @@ textarea {
 
 input:focus {
 	border-color: var(--color-background-dark);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
 }
 
 textarea {
