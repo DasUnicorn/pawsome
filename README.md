@@ -1,3 +1,14 @@
+> [!NOTE]
+> If you've stumbled upon this, you're probably curious about what I've been up to. This project was created by me as a certificate requirement. Therefore, this README might look intimidating, but it had to cover all the bases for grading.
+> 
+> **In short:**
+>
+> This HTML/CSS project is the single page of a fictional detective, my sister's dog Kasimir. Despite his lack of opposable thumbs, Kasimir's detective skills are legendary!
+>
+> Throughout this project, I delved into the world of responsive design and prototyping in figma, ensuring that Kasimir's page looks great on any device. Working with colors and accessibility was also a key part of the process, teaching me how to create visually appealing and inclusive designs.
+> Just a heads up, all the information below is **accurate as of 2023** and may have changed since then.
+
+---
 # pawsome
 Welcome to the static Website of "Pawsome Detective", a fictional Detective Agency run by Kasimir.
 It's designed to be simple, mobile friendly and appealing to possible customers.
